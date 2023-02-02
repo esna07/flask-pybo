@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hello, pybo!</title>
+</head>
+<body>
+<!-- sidebar(navigation bar) start -->
+{% include "navbar.html" %}
+
+<!-- sidebar(navigation bar) end -->
+
+<!-- content layer Start -->
+{% block content %}
+{% endblock %}
+<!-- content layer End -->
+<!-- Bootstrap js -->
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+<!-- JavaScript Start -->
+{% block script %}
+{% endblock %}
+<!-- JavaScript End -->
+</body>
+</html>
